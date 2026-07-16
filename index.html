@@ -1,48 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPERNATTY | Body • Mind • Spirit • Publishing</title>
+
+    <title>SUPERNATTY | The Development Laboratory</title>
+
+    <meta name="description"
+        content="SUPERNATTY is a human development company helping individuals strengthen the body, sharpen the mind, and pursue their highest potential through fitness, human development, publishing, and education.">
+
+    <style>
+
+        :root {
+            --black: #080808;
+            --dark-panel: #111111;
+            --gold: #f5b400;
+            --green: #54d62c;
+            --red: #ff3b1f;
+            --orange: #ff7a00;
+            --white: #f5f5f5;
+            --gray: #a7a7a7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background:
+                linear-gradient(rgba(8, 8, 8, 0.92), rgba(8, 8, 8, 0.96)),
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 49px,
+                    rgba(245, 180, 0, 0.06) 50px
+                ),
+                repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 49px,
+                    rgba(245, 180, 0, 0.06) 50px
+                );
+
+            color: var(--white);
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .logo {
+            width: min(280px, 75vw);
+            margin-bottom: 25px;
+            filter: drop-shadow(0 0 18px rgba(245, 180, 0, 0.35));
+        }
+
+        .system-status {
+            color: var(--green);
+            letter-spacing: 3px;
+            font-size: 0.8rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        header h1 {
+            font-size: clamp(2.5rem, 8vw, 6rem);
+            letter-spacing: 8px;
+            color: var(--gold);
+            text-shadow: 0 0 20px rgba(245, 180, 0, 0.35);
+        }
+
+        header p {
+            color: var(--gray);
+            letter-spacing: 4px;
+            margin: 10px 0 30px;
+        }
+
+        .hero-title {
+            max-width: 800px;
+            font-size: clamp(1.8rem, 5vw, 3.8rem);
+            margin-bottom: 20px;
+        }
+
+        .hero-title span {
+            color: var(--green);
+        }
+
+        .hero-description {
+            max-width: 650px;
+            color: var(--gray);
+            font-size: 1.1rem;
+            margin-bottom: 35px;
+        }
+
+        /* BUTTONS */
+
+        .button {
+            display: inline-block;
+            padding: 14px 25px;
+            margin: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid var(--gold);
+            color: var(--black);
+            background: var(--gold);
+            transition: 0.3s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 20px rgba(245, 180, 0, 0.5);
+        }
+
+        .button.green {
+            background: var(--green);
+            border-color: var(--green);
+        }
+
+        .button.red {
+            background: var(--red);
+            border-color: var(--red);
+        }
+
+        /* GENERAL SECTIONS */
+
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 90px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: var(--gray);
+            font-size: 1.1rem;
+        }
+
+        /* LAB PANEL */
+
+        .lab-panel {
+            max-width: 800px;
+            margin: 0 auto 70px;
+            padding: 25px;
+            border: 1px solid var(--green);
+            background: rgba(20, 20, 20, 0.85);
+            box-shadow: 0 0 25px rgba(84, 214, 44, 0.12);
+        }
+
+        .lab-panel h3 {
+            color: var(--green);
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .lab-panel p {
+            color: var(--gray);
+        }
+
+        /* SERVICE CARDS */
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background: var(--dark-panel);
+            border: 1px solid #333;
+            padding: 30px;
+            transition: 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--gold);
+            box-shadow: 0 0 25px rgba(245, 180, 0, 0.16);
+        }
+
+        .service-card h3 {
+            color: var(--gold);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .service-card p {
+            color: var(--gray);
+            margin-bottom: 20px;
+        }
+
+        .service-card ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .service-card li {
+            margin: 8px 0;
+            color: var(--white);
+        }
+
+        .service-card li::before {
+            content: "⚡ ";
+            color: var(--green);
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 45px 20px;
+            border-top: 2px solid var(--gold);
+            color: var(--gray);
+        }
+
+        footer strong {
+            color: var(--gold);
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                letter-spacing: 4px;
+            }
+
+            header p {
+                letter-spacing: 2px;
+                font-size: 0.8rem;
+            }
+
+            section {
+                padding: 65px 15px;
+            }
+
+            .service-card {
+                padding: 24px;
+            }
+
+        }
+
+    </style>
 </head>
 
 <body>
+
     <header>
-        <h1>☆ SUPERNATTY ★</h1>
-        <p>Body • Mind • Spirit • Publishing</p>
-    </header>
 
-    <main>
-        <h2>Experience the Supernatural. Let's GROW!</h2>
+        <div class="system-status">
+            ● SYSTEM STATUS: ONLINE
+        </div>
 
-        <p>
+        <img src="supernatty-logo.png"
+            alt="SUPERNATTY logo"
+            class="logo">
+
+        <h1>SUPERNATTY</h1>
+
+        <p>BODY • MIND • SPIRIT • PUBLISHING</p>
+
+        <h2 class="hero-title">
+            ENTER THE <span>LABORATORY</span> OF HUMAN POTENTIAL
+        </h2>
+
+        <p class="hero-description">
             SUPERNATTY exists to help individuals strengthen the body,
             sharpen the mind, and pursue their highest potential through
-            coaching, education, and publishing.
+            fitness, human development, education, and publishing.
         </p>
 
-        <h2>Our Divisions</h2>
+        <a href="#services" class="button">
+            ⚡ BEGIN YOUR EVOLUTION
+        </a>
 
-        <ul>
-            <li>Human Development & Metaphysics</li>
-            <li>Fitness</li>
-            <li>Dance</li>
-            <li>Publishing</li>
-            <li>Software & Technology</li>
-        </ul>
+    </header>
 
-        <h2>Coming Soon</h2>
-        <p>
-            A new digital home for growth, education, health, technology,
-            and human development.
-        </p>
 
-        <h2>Contact</h2>
-        <p>Email: Timothy@supernatty.net</p>
-    </main>
+    <section>
+
+        <div class="lab-panel">
+
+            <h3>🧪 DEVELOPMENT LABORATORY // PROTOCOL INITIALIZED</h3>
+
+            <p>
+                The human being is the experiment.
+                Growth is the process.
+                Potential is the unknown variable.
+                Development is the mission.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section id="services">
+
+        <div class="section-title">
+
+            <h2>⚡ DEVELOPMENT PROTOCOLS</h2>
+
+            <p>
+                Select your pathway.
+                Begin your next experiment.
+            </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+
+            <!-- FITNESS -->
+
+            <div class="service-card">
+
+                <h3>🏋️ FITNESS PROTOCOL</h3>
+
+                <p>
+                    Your body is the laboratory.
+                    Your discipline is the experiment.
+                </p>
+
+                <ul>
+                    <li>Personal Fitness — Single Session</li>
+                    <li>Personal Fitness — 4 Sessions</li>
+                    <li>Personal Fitness — 8 Sessions</li>
+                </ul>
+
+                <a class="button"
+                    href="https://buy.stripe.com/9B6cN5gc96s180Ya7nak001">
+                    ⚡ SINGLE SESSION
+                </a>
+
+                <a class="button green"
+                    href="https://buy.stripe.com/bJe28r7FDbMl4OMcfvak003">
+                    🔥 4-SESSION PACKAGE
+                </a>
+
+                <a class="button red"
+                    href="https://buy.stripe.com/cNiaEX6BzaIh4OMgvLak004">
+                    💥 8-SESSION PACKAGE
+                </a>
+
+            </div>
+
+
+            <!-- HUMAN DEVELOPMENT -->
+
+            <div class="service-card">
+
+                <h3>🧠 HUMAN DEVELOPMENT</h3>
+
+                <p>
+                    The greatest experiment is the development
+                    of the self.
+                </p>
+
+                <ul>
+                    <li>SUPERNATTY Trial</li>
+                    <li>Human Development Session</li>
+                    <li>Focused personal development</li>
+                </ul>
+
+                <a class="button green"
+                    href="https://buy.stripe.com/8x26oH0db8A95SQ2EVak005">
+                    🧪 BEGIN THE TRIAL
+                </a>
+
+                <a class="button"
+                    href="https://buy.stripe.com/3cI6oHgc98A9bda93jak006">
+                    🧠 60-MINUTE SESSION
+                </a>
+
+            </div>
+
+
+            <!-- PUBLISHING -->
+
+            <div class="service-card">
+
+                <h3>📚 PUBLISHING PROTOCOL</h3>
+
+                <p>
+                    Your ideas deserve a body of their own.
+                    Bring your vision into the world.
+                </p>
+
+                <ul>
+                    <li>Professional publishing support</li>
+                    <li>Book preparation</li>
+                    <li>Publishing guidance</li>
+                </ul>
+
+                <a class="button red"
+                    href="https://buy.stripe.com/14AeVd1hf2bLchegvLak007">
+                    📖 PUBLISH YOUR VISION
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <div class="section-title">
+
+            <h2>🌟 EXPERIENCE THE SUPERNATURAL</h2>
+
+            <p>
+                Let's GROW!
+            </p>
+
+        </div>
+
+    </section>
+
 
     <footer>
-        <p>© 2026 SUPERNATTY. All Rights Reserved.</p>
+
+        <p>
+            <strong>SUPERNATTY</strong>
+        </p>
+
+        <p>
+            Body • Mind • Spirit • Publishing
+        </p>
+
+        <p>
+            © 2026 SUPERNATTY. All Rights Reserved.
+        </p>
+
     </footer>
+
 </body>
+
 </html>
