@@ -1,1 +1,256 @@
+:root {
+            --black: #080808;
+            --dark-panel: #111111;
+            --gold: #f5b400;
+            --green: #54d62c;
+            --red: #ff3b1f;
+            --orange: #ff7a00;
+            --white: #f5f5f5;
+            --gray: #a7a7a7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background:
+                linear-gradient(rgba(8, 8, 8, 0.92), rgba(8, 8, 8, 0.96)),
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 49px,
+                    rgba(245, 180, 0, 0.06) 50px
+                ),
+                repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 49px,
+                    rgba(245, 180, 0, 0.06) 50px
+                );
+
+            color: var(--white);
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .logo {
+            width: min(280px, 75vw);
+            margin-bottom: 25px;
+            filter: drop-shadow(0 0 18px rgba(245, 180, 0, 0.35));
+        }
+
+        .system-status {
+            color: var(--green);
+            letter-spacing: 3px;
+            font-size: 0.8rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        header h1 {
+            font-size: clamp(2.5rem, 8vw, 6rem);
+            letter-spacing: 8px;
+            color: var(--gold);
+            text-shadow: 0 0 20px rgba(245, 180, 0, 0.35);
+        }
+
+        header p {
+            color: var(--gray);
+            letter-spacing: 4px;
+            margin: 10px 0 30px;
+        }
+
+        .hero-title {
+            max-width: 800px;
+            font-size: clamp(1.8rem, 5vw, 3.8rem);
+            margin-bottom: 20px;
+        }
+
+        .hero-title span {
+            color: var(--green);
+        }
+
+        .hero-description {
+            max-width: 650px;
+            color: var(--gray);
+            font-size: 1.1rem;
+            margin-bottom: 35px;
+        }
+
+        /* BUTTONS */
+
+        .button {
+            display: inline-block;
+            padding: 14px 25px;
+            margin: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid var(--gold);
+            color: var(--black);
+            background: var(--gold);
+            transition: 0.3s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 20px rgba(245, 180, 0, 0.5);
+        }
+
+        .button.green {
+            background: var(--green);
+            border-color: var(--green);
+        }
+
+        .button.red {
+            background: var(--red);
+            border-color: var(--red);
+        }
+
+        /* GENERAL SECTIONS */
+
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 90px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: var(--gray);
+            font-size: 1.1rem;
+        }
+
+        /* LAB PANEL */
+
+        .lab-panel {
+            max-width: 800px;
+            margin: 0 auto 70px;
+            padding: 25px;
+            border: 1px solid var(--green);
+            background: rgba(20, 20, 20, 0.85);
+            box-shadow: 0 0 25px rgba(84, 214, 44, 0.12);
+        }
+
+        .lab-panel h3 {
+            color: var(--green);
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .lab-panel p {
+            color: var(--gray);
+        }
+
+        /* SERVICE CARDS */
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background: var(--dark-panel);
+            border: 1px solid #333;
+            padding: 30px;
+            transition: 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--gold);
+            box-shadow: 0 0 25px rgba(245, 180, 0, 0.16);
+        }
+
+        .service-card h3 {
+            color: var(--gold);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .service-card p {
+            color: var(--gray);
+            margin-bottom: 20px;
+        }
+
+        .service-card ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .service-card li {
+            margin: 8px 0;
+            color: var(--white);
+        }
+
+        .service-card li::before {
+            content: "⚡ ";
+            color: var(--green);
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 45px 20px;
+            border-top: 2px solid var(--gold);
+            color: var(--gray);
+        }
+
+        footer strong {
+            color: var(--gold);
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                letter-spacing: 4px;
+            }
+
+            header p {
+                letter-spacing: 2px;
+                font-size: 0.8rem;
+            }
+
+            section {
+                padding: 65px 15px;
+            }
+
+            .service-card {
+                padding: 24px;
+            }
+
+        }
 
