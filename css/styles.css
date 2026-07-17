@@ -8,6 +8,61 @@
             --white: #f5f5f5;
             --gray: #a7a7a7;
         }
+/* GLOBAL NAVIGATION */
+
+.site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 30px;
+
+    background: rgba(8, 8, 8, 0.95);
+    border-bottom: 1px solid var(--gold);
+}
+
+.nav-logo {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--green);
+}
+
+.nav-button {
+    padding: 8px 16px;
+
+    background: var(--gold);
+    color: var(--black);
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.nav-button:hover {
+    background: var(--green);
+}
 
         * {
             margin: 0;
