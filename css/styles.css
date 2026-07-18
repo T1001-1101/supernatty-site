@@ -543,3 +543,124 @@
     color: var(--gray);
     margin-bottom: 25px;
 }
+/* MEMBERSHIP PAGE */
+
+.membership-intro {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px 20px;
+}
+
+.membership-intro h2 {
+    color: var(--green);
+    margin-bottom: 20px;
+}
+
+.membership-intro p {
+    margin-bottom: 15px;
+}
+
+.membership-grid {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px 90px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.membership-card {
+    background: var(--dark-panel);
+    border: 1px solid #333;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.3s ease;
+}
+
+.membership-card:hover {
+    transform: translateY(-8px);
+}
+
+.student-card:hover {
+    border-color: var(--green);
+    box-shadow: 0 0 25px rgba(84, 214, 44, 0.16);
+}
+
+.administrator-membership-card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 0 25px rgba(245, 180, 0, 0.16);
+}
+
+.membership-label {
+    color: var(--gray);
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+}
+
+.membership-card h2 {
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.membership-price {
+    color: var(--green);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.membership-price span {
+    color: var(--gray);
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.membership-card > p:not(.membership-label):not(.membership-price) {
+    color: var(--gray);
+    margin-bottom: 25px;
+}
+
+.membership-card ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.membership-card li {
+    margin: 12px 0;
+    color: var(--white);
+}
+
+.membership-card li::before {
+    content: "⚡ ";
+    color: var(--green);
+}
+
+.membership-card .button {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.membership-philosophy {
+    text-align: center;
+    padding: 90px 20px;
+
+    border-top: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+}
+
+.membership-philosophy h2 {
+    max-width: 800px;
+    margin: auto auto 15px;
+
+    color: var(--gold);
+    font-size: clamp(1.8rem, 5vw, 3.2rem);
+}
+
+.membership-philosophy p {
+    color: var(--gray);
+}
