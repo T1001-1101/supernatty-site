@@ -475,3 +475,71 @@
     color: var(--gray);
     margin-bottom: 25px;
 }
+/* ADMINISTRATOR PAGE */
+
+.administrator-intro {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px 20px;
+}
+
+.administrator-intro h2 {
+    color: var(--green);
+    margin-bottom: 20px;
+}
+
+.administrator-intro p {
+    margin-bottom: 15px;
+}
+
+.administrator-grid {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px 90px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.administrator-card {
+    background: var(--dark-panel);
+    border: 1px solid #333;
+    padding: 35px;
+
+    transition: 0.3s ease;
+}
+
+.administrator-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--orange);
+    box-shadow: 0 0 25px rgba(255, 122, 0, 0.16);
+}
+
+.administrator-card h2 {
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.administrator-card p {
+    color: var(--gray);
+}
+
+.administrator-pricing {
+    text-align: center;
+    padding: 90px 20px;
+
+    border-top: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+}
+
+.administrator-pricing h2 {
+    color: var(--gold);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 15px;
+}
+
+.administrator-pricing > p:not(.system-status) {
+    color: var(--gray);
+    margin-bottom: 25px;
+}
