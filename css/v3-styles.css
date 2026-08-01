@@ -294,3 +294,32 @@ footer {
 
 
 }
+/* SUPERNATTY Navigation Logo */
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo-image {
+    width: 90px;
+    height: auto;
+    display: block;
+}
+
+
+/* Navigation Layout */
+
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
