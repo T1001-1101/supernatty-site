@@ -1,1 +1,127 @@
+/* SUPERNATTY V3 FOUNDATION */
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #050505;
+    color: white;
+}
+
+
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 5%;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.page-hero {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 100px 25px;
+}
+
+
+.page-hero h1 {
+    font-size: 4rem;
+    letter-spacing: 5px;
+}
+
+
+.page-hero h2 {
+    font-weight: normal;
+}
+
+
+.system-status {
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+}
+
+
+.library-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 25px;
+}
+
+
+.library-card {
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 35px;
+    background: rgba(255,255,255,0.03);
+}
+
+
+.library-card h2 {
+    margin-top: 0;
+}
+
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.green {
+    border-color: white;
+}
+
+
+footer {
+    text-align: center;
+    padding: 50px 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+
+@media(max-width:800px){
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+
+    .library-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .page-hero h1 {
+        font-size: 2.5rem;
+    }
+
+}
