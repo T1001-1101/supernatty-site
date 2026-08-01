@@ -140,3 +140,35 @@ footer {
     0 0 25px rgba(255,255,255,0.18);
 
 }
+@media (max-width: 768px) {
+
+    .nav-links {
+
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+
+    .library-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .page-hero h1 {
+
+        font-size: 2.2rem;
+
+    }
+
+
+    .hero-logo {
+
+        width: 180px;
+        max-width: 80%;
+
+    }
+
+}
