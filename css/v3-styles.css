@@ -125,3 +125,18 @@ footer {
     }
 
 }
+.library-card {
+
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+
+}
+
+
+.library-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+    0 0 25px rgba(255,255,255,0.18);
+
+}
