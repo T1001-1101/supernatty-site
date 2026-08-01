@@ -189,3 +189,108 @@ footer {
     transform: scale(1.05);
 
 }
+/* =========================
+   SUPERNATTY V3 INTERACTIVE SYSTEM
+   ========================= */
+
+
+/* Logo */
+
+.hero-logo {
+
+    width: 220px;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 25px;
+
+    transition: transform 0.35s ease;
+
+}
+
+
+.hero-logo:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+
+/* Development / Library / Press Cards */
+
+.library-card,
+.service-card {
+
+    transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+
+}
+
+
+
+.library-card:hover,
+.service-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+    0 0 25px rgba(255,255,255,0.18);
+
+}
+
+
+
+/* Buttons */
+
+.button {
+
+    transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+}
+
+
+.button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+    0 0 18px rgba(255,255,255,0.25);
+
+}
+
+
+
+/* System Status */
+
+.system-status {
+
+    letter-spacing: 1px;
+
+}
+
+
+
+/* Mobile Optimization */
+
+@media (max-width:768px) {
+
+
+.hero-logo {
+
+    width: 170px;
+
+}
+
+
+.library-card,
+.service-card {
+
+    width: 100%;
+
+}
+
+
+}
