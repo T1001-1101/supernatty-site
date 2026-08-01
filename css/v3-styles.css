@@ -344,3 +344,30 @@ footer {
     }
 
 }
+/* SUPERNATTY Logo Energy Field */
+
+.nav-logo-image {
+
+    width: 90px;
+    height: auto;
+
+    filter:
+    drop-shadow(0 0 8px rgba(0,255,120,0.45))
+    drop-shadow(0 0 18px rgba(0,255,120,0.25));
+
+    transition: 
+    transform 0.3s ease,
+    filter 0.3s ease;
+
+}
+
+
+.nav-logo-image:hover {
+
+    transform: scale(1.08);
+
+    filter:
+    drop-shadow(0 0 12px rgba(0,255,120,0.8))
+    drop-shadow(0 0 30px rgba(0,255,120,0.45));
+
+}
