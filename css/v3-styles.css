@@ -393,3 +393,27 @@ main,
     text-align: center;
 
 }
+/* SUPERNATTY Laboratory Card Activation */
+
+.service-card,
+.library-card {
+
+    transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+
+}
+
+
+
+.service-card:hover,
+.library-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+
+    0 0 12px rgba(0,255,120,0.45),
+    0 0 35px rgba(0,255,120,0.25);
+
+}
