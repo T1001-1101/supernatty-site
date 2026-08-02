@@ -427,3 +427,104 @@ main,
     padding-bottom: 15px;
 
 }
+/* =====================================
+   SUPERNATTY VISUAL SYSTEM v1.0
+   ===================================== */
+
+
+/* Active System Indicators */
+
+.system-status {
+
+    color: #00ff78;
+
+    text-shadow:
+    0 0 8px rgba(0,255,120,0.8),
+    0 0 18px rgba(0,255,120,0.4);
+
+    letter-spacing: 2px;
+
+}
+
+
+
+/* Logo Energy Field */
+
+.nav-logo-image {
+
+    filter:
+    drop-shadow(0 0 8px rgba(0,255,120,0.45))
+    drop-shadow(0 0 18px rgba(0,255,120,0.25));
+
+    transition:
+    transform .3s ease,
+    filter .3s ease;
+
+}
+
+
+.nav-logo-image:hover {
+
+    transform: scale(1.08);
+
+    filter:
+    drop-shadow(0 0 15px rgba(0,255,120,0.9))
+    drop-shadow(0 0 35px rgba(0,255,120,0.5));
+
+}
+
+
+
+/* Laboratory Module Cards */
+
+.service-card,
+.library-card {
+
+    border: 1px solid rgba(212,175,55,0.5);
+
+    transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+
+}
+
+
+.service-card:hover,
+.library-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+
+    0 0 15px rgba(0,255,120,0.45),
+    0 0 35px rgba(0,255,120,0.25);
+
+}
+
+
+
+/* Golden Knowledge Dividers */
+
+.section-title h2,
+.page-hero h1,
+.hero h1 {
+
+    border-bottom:
+    2px solid #d4af37;
+
+    padding-bottom: 15px;
+
+}
+
+
+
+/* Center Laboratory Layout */
+
+main,
+.hero,
+.page-hero {
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
