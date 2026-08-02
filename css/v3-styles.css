@@ -371,3 +371,25 @@ footer {
     drop-shadow(0 0 30px rgba(0,255,120,0.45));
 
 }
+/* SUPERNATTY Global Content Alignment */
+
+main,
+.hero,
+.page-hero,
+.section-title,
+.lab-panel,
+.service-grid {
+
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.hero,
+.page-hero {
+
+    text-align: center;
+
+}
