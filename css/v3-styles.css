@@ -417,3 +417,13 @@ main,
     0 0 35px rgba(0,255,120,0.25);
 
 }
+/* SUPERNATTY Energy Dividers */
+
+.section-title h2,
+.page-hero h1,
+.hero h1 {
+
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 15px;
+
+}
