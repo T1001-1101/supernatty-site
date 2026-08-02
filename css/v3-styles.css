@@ -565,3 +565,31 @@ main,
     0 0 6px rgba(212,175,55,0.4);
 
 }
+/* GOLD */
+
+.hero h1,
+.page-hero h1{
+
+color:#d4af37;
+
+}
+
+
+/* RED */
+
+.service-card h3,
+.lab-panel h3,
+.hero p:first-of-type{
+
+color:#c62828;
+
+}
+
+
+/* GREEN */
+
+.system-status{
+
+color:#00ff78;
+
+}
