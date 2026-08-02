@@ -528,3 +528,16 @@ main,
     margin-right: auto;
 
 }
+/* SUPERNATTY Gold Division Headings */
+
+.hero h1,
+.page-hero h1,
+.section-title h2 {
+
+    color: #d4af37;
+
+    text-shadow:
+    0 0 8px rgba(212,175,55,0.5),
+    0 0 18px rgba(212,175,55,0.25);
+
+}
