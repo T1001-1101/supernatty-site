@@ -541,3 +541,27 @@ main,
     0 0 18px rgba(212,175,55,0.25);
 
 }
+/* =================================
+   SUPERNATTY PAGE TITLE SYSTEM
+   ================================= */
+
+
+.page-hero h1 {
+
+    color: #d4af37;
+
+    text-shadow:
+    0 0 8px rgba(212,175,55,0.55),
+    0 0 20px rgba(212,175,55,0.25);
+
+}
+
+
+.page-hero h2 {
+
+    color: #d4af37;
+
+    text-shadow:
+    0 0 6px rgba(212,175,55,0.4);
+
+}
