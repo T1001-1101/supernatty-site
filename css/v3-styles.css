@@ -574,3 +574,46 @@ main,
         0 0 18px rgba(0,255,120,.45);
 
 }
+/* =====================================
+   SUPERNATTY COLOR SYSTEM
+===================================== */
+
+/* Hero Motto */
+
+.hero-motto{
+
+    color:#b22222;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    text-shadow:
+        0 0 10px rgba(178,34,34,.45);
+
+}
+
+
+/* Protocol Titles */
+
+.protocol-title{
+
+    color:#b22222;
+
+    text-shadow:
+        0 0 8px rgba(178,34,34,.45);
+
+}
+
+
+/* Laboratory Heading */
+
+.lab-heading{
+
+    color:#00ff78;
+
+    text-shadow:
+        0 0 10px rgba(0,255,120,.85),
+        0 0 20px rgba(0,255,120,.45);
+
+}
